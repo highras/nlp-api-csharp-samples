@@ -51,7 +51,6 @@ namespace com.ilivedata.asr
             IDictionary<string, object> config = new Dictionary<string, object>();
             config.Add("codec", "AMR_WB");
             config.Add("sampleRateHertz", 16000);
-            config.Add("engine", "GG");
 
             IDictionary<string, object> parameters = new Dictionary<string, object>();
             parameters.Add("languageCode", languageCode);

@@ -15,8 +15,8 @@ namespace com.ilivedata.audiochecksubmit
         private const string PROJECT_ID = "YOUR_PROJECT_ID_GOES_HERE";
         private const string SECRET_KEY = "YOUR_SECRET_KEY_GOES_HERE";
 
-        private string postUrl = "https://vsafe.ilivedata.com/api/v1/audio/check/submit";
-        private string endpointHost = "vsafe.ilivedata.com";
+        private string postUrl = "https://asafe.ilivedata.com/api/v1/audio/check/submit";
+        private string endpointHost = "asafe.ilivedata.com";
         private string endpointUri = "/api/v1/audio/check/submit";
         public const string ISO8601DateFormatNoMS = "yyyy-MM-dd\\THH:mm:ss\\Z";
 

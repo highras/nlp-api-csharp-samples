@@ -43,12 +43,13 @@ namespace com.ilivedata.audiochecksubmit
         /// </summary>
         private static string ValidPathCharacters = DetermineValidPathCharacters();
 
-        public string check(string audioUrl, int type, string userId)
+        public string check(string audioUrl, int type, string lang, string userId)
         {
             string now = DateTime.UtcNow.ToString(ISO8601DateFormatNoMS);
 
             IDictionary<string, object> parameters = new Dictionary<string, object>();
             parameters.Add("type", type);
+            parameters.Add("lang", lang);
             parameters.Add("audio", audioUrl);
             parameters.Add("userId", userId);
 
@@ -249,7 +250,7 @@ namespace com.ilivedata.audiochecksubmit
         {
             string audioUrl = "https://speech-test.s3.cn-northwest-1.amazonaws.com.cn/speech/79b31026-d30a-11ea-aaa9-ac1f6b9346d0.wav";
             Program audioCheck = new Program();
-            audioCheck.check(audioUrl, 1, "12345678");
+            audioCheck.check(audioUrl, 1, "zh-CN", "12345678");
         }
     }
 }

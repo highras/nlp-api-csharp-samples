@@ -45,7 +45,7 @@ namespace com.ilivedata.textcheck
 
         public string check(string text, string userId)
         {
-            string now = DateTime.UtcNow.ToString(ISO8601DateFormatNoMS);
+            string now = DateTimeOffset.UtcNow.ToString(ISO8601DateFormatNoMS);
 
             IDictionary<string, object> parameters = new Dictionary<string, object>();
             parameters.Add("content", text);

@@ -43,7 +43,8 @@ namespace com.ilivedata.alt
 
         public string Translate(string source, string sourceLanguage, string targetLanguage)
         {
-            string now = DateTime.UtcNow.ToString(ISO8601DateFormatNoMS);
+            string now = DateTimeOffset.UtcNow.ToString(ISO8601DateFormatNoMS);
+
 
             IDictionary<string, string> parameters = new Dictionary<string, string>();
             parameters.Add("source", sourceLanguage);
